@@ -222,7 +222,7 @@ heroPicks.forEach(([data, x, y, r, depth, blur], i) => {
 
 const tickerHtml = TICKER.map(
   ([sym, what, val, dir]) =>
-    `<span class="ticker-item"><b>${escapeHtml(sym)}</b><span>${escapeHtml(what)}</span><i class="${dir === "down" ? "down" : ""}">${dir === "down" ? "▼" : "▲"} ${escapeHtml(val)}</i></span>`,
+    `<span class="ticker-item"><b>${escapeHtml(sym)}</b><span>${escapeHtml(what)}</span><i class="${dir === "down" ? "down" : ""}">${escapeHtml(val)}</i></span>`,
 ).join("");
 document.getElementById("ticker").innerHTML = tickerHtml + tickerHtml;
 

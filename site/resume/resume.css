@@ -414,6 +414,21 @@ html.is-locked .dock {
   color: var(--down);
 }
 
+/* Up or down marker, drawn rather than typed so phones never swap in an emoji */
+.ticker-item i::before {
+  content: "";
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: 1px;
+  border-inline: 4px solid transparent;
+  border-bottom: 7px solid currentColor;
+}
+
+.ticker-item i.down::before {
+  border-bottom: 0;
+  border-top: 7px solid currentColor;
+}
+
 @keyframes tick {
   to { transform: translateX(-50%); }
 }
@@ -804,11 +819,6 @@ html.is-locked .dock {
 .clip-meta b {
   color: var(--paper-ink);
   font-weight: 600;
-}
-
-.clip:hover .clip-meta span::after,
-.clip:focus-visible .clip-meta span::after {
-  content: " ↗";
 }
 
 .clip:focus-visible .paper {
