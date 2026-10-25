@@ -1,0 +1,5 @@
+/resume/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/resume/img/*
+  Cache-Control: public, max-age=86400

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Your Name · Resume</title>
+    <meta name="description" content="Your Name: resume, experience, deals, education and interests." />
+    <meta name="theme-color" content="#0b1014" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/helix.css?v=20" />
+    <link rel="stylesheet" href="/resume/resume.css?v=4" />
+    <script>
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme !== "light" && theme !== "dark") {
+          theme = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        }
+        document.documentElement.dataset.theme = theme;
+      } catch (error) {
+        document.documentElement.dataset.theme = "dark";
+      }
+    </script>
+  </head>
+  <body class="resume">
+    <a class="home-link" href="/">Your Name</a>
+    <a class="projects" href="https://example.com" target="_blank" rel="noopener noreferrer">Projects</a>
+    <div class="pill theme-pill" role="group" aria-label="Color theme">
+      <button type="button" data-theme-choice="light" aria-label="Light">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="3.25" fill="none" stroke="currentColor" stroke-width="1.6" />
+          <path
+            d="M12 3.2v2.1M12 18.7v2.1M4.6 4.6l1.5 1.5M17.9 17.9l1.5 1.5M3.2 12h2.1M18.7 12h2.1M4.6 19.4l1.5-1.5M17.9 6.1l1.5-1.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <button type="button" data-theme-choice="dark" aria-label="Dark">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M15.6 14.8A6.2 6.2 0 0 1 9.2 5.4 6.4 6.4 0 1 0 15.6 14.8z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+
+    <nav class="pill dock" aria-label="Jump to section">
+      <div class="dock-track">
+        <a href="#role-1" data-rail="role-1">Company One</a>
+        <a href="#role-2" data-rail="role-2">Company Two</a>
+        <a href="#role-3" data-rail="role-3">Company Three</a>
+        <a href="#deals" data-rail="deals">Deals</a>
+        <a href="#education" data-rail="education">School</a>
+        <a href="#interests" data-rail="interests">Interests</a>
+      </div>
+    </nav>
+
+    <main>
+      <header class="hero" id="top">
+        <div class="hero-field" id="hero-field" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Resume</p>
+          <h1 class="hero-name">Your Name</h1>
+          <p class="hero-sub">Strategy, corporate development and consumer tech.</p>
+          <p class="hero-meta">
+            <span class="hero-loc">City, ST</span>
+            <a class="chip" href="mailto:you@example.com?subject=Hello">Email</a>
+            <a class="chip" href="/resume/Resume.pdf" download>Download PDF</a>
+          </p>
+        </div>
+        <a class="scroll-cue" href="#role-1" aria-label="Scroll to experience">
+          <span>Scroll</span>
+          <i aria-hidden="true"></i>
+        </a>
+        <div class="ticker" aria-hidden="true">
+          <div class="ticker-track" id="ticker"></div>
+        </div>
+      </header>
+
+      <section class="chapter" id="role-1" data-chapter="role-1">
+        <div class="ghost-wrap" aria-hidden="true"><div class="ghost-word">Company One</div></div>
+        <div class="chapter-grid">
+          <div class="clips clips-left" data-side="left"></div>
+          <div class="role">
+            <article class="role-card">
+              <button type="button" class="role-toggle" aria-expanded="false" aria-controls="role-dk">
+                <span class="role-idx">01 <span>/ 03</span></span>
+                <span class="role-years">2021 to Present</span>
+                <span class="role-logo role-logo-one" aria-hidden="true"></span>
+                <span class="role-co">Company One</span>
+                <span class="role-title">Director, Strategy &amp; Corporate Development</span>
+                <span class="role-loc">City, ST</span>
+                <span class="role-desc">Senior member of the corporate development team, driving capital allocation across partnerships, M&amp;A, product launches and new verticals. Also lead an analytics team that measures partnership and marketing spend.</span>
+                <span class="role-more"><span data-closed="What I do" data-open="Show less"></span><i aria-hidden="true"></i></span>
+              </button>
+              <div class="role-body" id="role-dk">
+                <ul>
+                  <li>Lead commercial and financial diligence on acquisitions and partnerships, and co-author investment memos for the executive team and board.</li>
+                  <li>Drove diligence on several completed acquisitions, including sourcing a small tuck-in that brought a key capability in-house.</li>
+                  <li>Own deal structuring and modeling for the company's largest partnerships; renegotiations have saved eight figures a year.</li>
+                  <li>Structure transactions across equity stakes, revenue shares and multi-year agreements with embedded marketing rights.</li>
+                  <li>Promoted from Manager to Director, taking on more of deal execution and executive engagement.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="clips clips-right" data-side="right"></div>
+        </div>
+      </section>
+
+      <section class="chapter" id="role-2" data-chapter="role-2">
+        <div class="ghost-wrap" aria-hidden="true"><div class="ghost-word">Company Two</div></div>
+        <div class="chapter-grid">
+          <div class="clips clips-left" data-side="left"></div>
+          <div class="role">
+            <article class="role-card">
+              <button type="button" class="role-toggle" aria-expanded="false" aria-controls="role-or">
+                <span class="role-idx">02 <span>/ 03</span></span>
+                <span class="role-years">2018 to 2021</span>
+                <span class="role-logo role-logo-two" aria-hidden="true"></span>
+                <span class="role-co">Company Two</span>
+                <span class="role-aka">formerly Old Name</span>
+                <span class="role-title">Manager, Investments</span>
+                <span class="role-loc">City, ST</span>
+                <span class="role-desc">Early business hire at a venture-backed startup; led acquisition and market-launch strategy.</span>
+                <span class="role-more"><span data-closed="What I did" data-open="Show less"></span><i aria-hidden="true"></i></span>
+              </button>
+              <div class="role-body" id="role-or">
+                <ul>
+                  <li>Early business hire: built operating plans and growth investment memos with the founders and CFO, and owned the unit economics of the core product.</li>
+                  <li>Promoted twice as the company scaled from a small team to several hundred people.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="clips clips-right" data-side="right"></div>
+        </div>
+      </section>
+
+      <section class="chapter chapter-compact" id="role-3" data-chapter="role-3">
+        <div class="ghost-wrap" aria-hidden="true"><div class="ghost-word">Company Three</div></div>
+        <div class="chapter-grid">
+          <div class="clips clips-left" data-side="left"></div>
+          <div class="role">
+            <article class="role-card">
+              <button type="button" class="role-toggle" aria-expanded="false" aria-controls="role-bc">
+                <span class="role-idx">03 <span>/ 03</span></span>
+                <span class="role-years">2016 to 2018</span>
+                <span class="role-logo role-logo-three" aria-hidden="true"></span>
+                <span class="role-co">Company Three</span>
+                <span class="role-title">Analyst, Credit Trading</span>
+                <span class="role-loc">City, ST</span>
+                <span class="role-desc">Analyst in an investment bank's credit trading group, a liquidity provider across high-yield and distressed debt.</span>
+                <span class="role-more"><span data-closed="What I did" data-open="Show less"></span><i aria-hidden="true"></i></span>
+              </button>
+              <div class="role-body" id="role-bc">
+                <ul>
+                  <li>Covered high-yield and distressed credit across retail, telecom and metals and mining, and took over a trading book in the second year.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="clips clips-right" data-side="right"></div>
+        </div>
+      </section>
+
+      <section class="block deals" id="deals" data-chapter="deals">
+        <div class="block-head">
+          <p class="eyebrow">Selected transaction experience</p>
+          <h2 class="section-title">Deals</h2>
+        </div>
+        <div class="deal-list">
+          <article class="deal">
+            <button type="button" class="deal-toggle" aria-expanded="false" aria-controls="deal-1">
+              <span class="deal-size">$500M</span>
+              <span class="deal-text">
+                <span class="deal-name">Acquisition of a consumer app</span>
+                <span class="deal-role">Lead on revenue and marketing synergies</span>
+              </span>
+              <i class="deal-plus" aria-hidden="true"></i>
+            </button>
+            <div class="deal-body" id="deal-1">
+              <ul>
+                <li>Led the synergy model with the target's leadership team and our CFO and CMO.</li>
+                <li>Quantified cross-sell between the two customer bases with the new-ventures team.</li>
+                <li>Built pro forma cash-flow forecasts to confirm liquidity for follow-on deals and a share repurchase.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="deal">
+            <button type="button" class="deal-toggle" aria-expanded="false" aria-controls="deal-2">
+              <span class="deal-size">$1.0B</span>
+              <span class="deal-text">
+                <span class="deal-name">Strategic partnership with a national media company</span>
+                <span class="deal-role">Lead on a six-person deal team</span>
+              </span>
+              <i class="deal-plus" aria-hidden="true"></i>
+            </button>
+            <div class="deal-body" id="deal-2">
+              <ul>
+                <li>Sole lead on the model and structure, sizing revenue, marketing and market-share impact.</li>
+                <li>Recommended a counter-offer well below the initial ask; the executive team and board approved it.</li>
+                <li>Structured a performance-based earn-out to limit shareholder dilution.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="deal">
+            <button type="button" class="deal-toggle" aria-expanded="false" aria-controls="deal-3">
+              <span class="deal-size">$200M</span>
+              <span class="deal-text">
+                <span class="deal-name">Strategic partnership with a consumer tech company</span>
+                <span class="deal-role">Lead on a five-person deal team</span>
+              </span>
+              <i class="deal-plus" aria-hidden="true"></i>
+            </button>
+            <div class="deal-body" id="deal-3">
+              <ul>
+                <li>Owned the model for revenue and marketing synergies from the partner's new product.</li>
+                <li>Designed an incentive structure with the CEO and CFO that de-risked the investment.</li>
+                <li>Negotiated preferred rates and placements on the partner's platform.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="block education" id="education" data-chapter="education">
+        <div class="block-head">
+          <p class="eyebrow">Education</p>
+          <h2 class="section-title">School</h2>
+        </div>
+        <div class="edu-grid">
+          <article class="edu-card">
+            <div class="edu-logo" aria-hidden="true"><img src="/resume/img/logos/school-university.svg" alt="" width="120" height="120" /></div>
+            <div class="edu-copy">
+              <p class="role-years">Class of 20XX</p>
+              <h3 class="edu-name">State University</h3>
+              <p class="edu-degree">BA in Economics</p>
+              <p class="role-loc">Investment Club · Club Sport</p>
+            </div>
+          </article>
+          <article class="edu-card">
+            <div class="edu-logo" aria-hidden="true"><img src="/resume/img/logos/school-high.svg" alt="" width="120" height="120" /></div>
+            <div class="edu-copy">
+              <p class="role-years">Class of 20XX</p>
+              <h3 class="edu-name">City High School</h3>
+              <p class="role-loc">City, ST</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="block interests" id="interests" data-chapter="interests">
+        <div class="block-head">
+          <p class="eyebrow">Off the clock</p>
+          <h2 class="section-title">Interests</h2>
+        </div>
+
+        <div class="board">
+          <div class="cluster">
+            <h3 class="cluster-label">Mountains</h3>
+            <div class="cluster-photos" data-layout="trio">
+              <figure class="polaroid" style="--r: -4deg">
+                <button type="button" data-photo="/resume/img/mountain-1.webp" data-caption="The climb">
+                  <img src="/resume/img/mountain-1.webp" alt="Layered mountain ridges under a pale sky" loading="lazy" width="1800" height="1350" />
+                </button>
+                <figcaption>The climb</figcaption>
+              </figure>
+              <figure class="polaroid" style="--r: 5deg">
+                <button type="button" data-photo="/resume/img/mountain-2.webp" data-caption="The top">
+                  <img src="/resume/img/mountain-2.webp" alt="Tall mountain ridges in blue and gray" loading="lazy" width="1200" height="1800" />
+                </button>
+                <figcaption>The top</figcaption>
+              </figure>
+              <figure class="polaroid" style="--r: -2deg">
+                <button type="button" data-photo="/resume/img/mountain-3.webp" data-caption="The descent">
+                  <img src="/resume/img/mountain-3.webp" alt="Misty ridgelines above a snowfield" loading="lazy" width="1200" height="1800" />
+                </button>
+                <figcaption>The descent</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="cluster">
+            <h3 class="cluster-label">Ocean</h3>
+            <div class="cluster-photos" data-layout="trio">
+              <figure class="polaroid" style="--r: 3deg">
+                <button type="button" data-photo="/resume/img/ocean-1.webp" data-caption="Offshore">
+                  <img src="/resume/img/ocean-1.webp" alt="Open ocean under a midday sun" loading="lazy" width="1800" height="1012" />
+                </button>
+                <figcaption>Offshore</figcaption>
+              </figure>
+              <figure class="polaroid" style="--r: -5deg">
+                <button type="button" data-photo="/resume/img/ocean-2.webp" data-caption="Golden hour">
+                  <img src="/resume/img/ocean-2.webp" alt="The sea at sunset" loading="lazy" width="1350" height="1800" />
+                </button>
+                <figcaption>Golden hour</figcaption>
+              </figure>
+              <figure class="polaroid" style="--r: 2deg">
+                <button type="button" data-photo="/resume/img/ocean-3.webp" data-caption="Glass">
+                  <img src="/resume/img/ocean-3.webp" alt="Calm water under a clear sky" loading="lazy" width="1800" height="1199" />
+                </button>
+                <figcaption>Glass</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="cluster">
+            <h3 class="cluster-label">On the water</h3>
+            <div class="cluster-photos" data-layout="trio">
+              <figure class="polaroid" style="--r: -3deg">
+                <button type="button" data-photo="/resume/img/harbor-1.webp" data-caption="Heading out">
+                  <img src="/resume/img/harbor-1.webp" alt="A small white boat at sunset" loading="lazy" width="1350" height="1800" />
+                </button>
+                <figcaption>Heading out</figcaption>
+              </figure>
+              <figure class="polaroid" style="--r: 4deg">
+                <button type="button" data-photo="/resume/img/harbor-2.webp" data-caption="Gray morning">
+                  <img src="/resume/img/harbor-2.webp" alt="Flat gray water at dawn" loading="lazy" width="1350" height="1800" />
+                </button>
+                <figcaption>Gray morning</figcaption>
+              </figure>
+              <figure class="polaroid" style="--r: -1deg">
+                <button type="button" data-photo="/resume/img/harbor-3.webp" data-caption="On the mooring">
+                  <img src="/resume/img/harbor-3.webp" alt="A boat on a calm evening sea" loading="lazy" width="1800" height="1012" />
+                </button>
+                <figcaption>On the mooring</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="cluster">
+            <h3 class="cluster-label">Training</h3>
+            <div class="cluster-photos" data-layout="duo">
+              <figure class="polaroid" style="--r: 3deg">
+                <button type="button" data-photo="/resume/img/training-1.webp" data-caption="Early session">
+                  <img src="/resume/img/training-1.webp" alt="Soft blue light behind vertical bars" loading="lazy" width="1350" height="1800" />
+                </button>
+                <figcaption>Early session</figcaption>
+              </figure>
+              <figure class="polaroid" style="--r: -4deg">
+                <button type="button" data-photo="/resume/img/training-2.webp" data-caption="Late session">
+                  <img src="/resume/img/training-2.webp" alt="Warm light in a dark room" loading="lazy" width="1800" height="1350" />
+                </button>
+                <figcaption>Late session</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="cluster cluster-wide">
+            <h3 class="cluster-label">Distribution &amp; network effects</h3>
+            <div class="network-pair">
+              <a class="slide-card" href="https://example.com" target="_blank" rel="noopener noreferrer" data-tag="Visit">
+                <span class="slide-title">Each feature feeds the next</span>
+                <span class="slide-frame">
+                  <span class="slide-inner">
+                    <img src="/resume/img/slide-flywheel.webp" alt="Sample slide: a loop of acquire, engage, share, invite and create around a product mark." loading="lazy" width="1800" height="900" />
+                    <svg class="slide-anim" viewBox="0 0 2400 1200" preserveAspectRatio="none" aria-hidden="true">
+                      <defs>
+                        <filter id="orbit-glow" x="-50%" y="-50%" width="200%" height="200%">
+                          <feGaussianBlur stdDeviation="8" result="b" />
+                          <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+                        </filter>
+                      </defs>
+                      <g class="pulses"></g>
+                      <circle class="orbit-trail" cx="755" cy="680" r="315" pathLength="1000" filter="url(#orbit-glow)" />
+                      <circle class="orbit-head" r="10" filter="url(#orbit-glow)" />
+                    </svg>
+                  </span>
+                </span>
+                <span class="slide-foot">From a sample deck · your product here ↗</span>
+              </a>
+              <div class="shelf shelf-single" data-shelf="network"></div>
+            </div>
+          </div>
+
+          <div class="cluster cluster-wide">
+            <h3 class="cluster-label">Business history</h3>
+            <div class="shelf shelf-wide" data-shelf="history"></div>
+          </div>
+
+          <div class="cluster cluster-wide cluster-water">
+            <h3 class="cluster-label">Worth rereading</h3>
+            <div class="shelf shelf-single" data-shelf="water"></div>
+            <p class="shelf-note">A short note on why this one stays on the shelf. <a href="https://example.com" target="_blank" rel="noopener noreferrer">Read it ↗</a></p>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="foot">
+      <a class="sticker" href="mailto:you@example.com?subject=Hello" data-tag="Email" aria-label="Send an email">
+        <img src="/resume/img/sticker.webp" alt="A sticker that says say hello" loading="lazy" width="631" height="493" />
+      </a>
+      <p class="foot-cta">Tap the sticker to say hi.</p>
+      <a class="foot-top" href="#top">Back to top ↑</a>
+      <p class="foot-credits">Every clipping, outlet, company, photo and book here is a placeholder.</p>
+      <p class="foot-copy">© 2026 Your Name</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <img class="lightbox-img" id="lightbox-img" alt="" draggable="false" />
+      <p class="lightbox-meta"><span id="lightbox-caption"></span><span id="lightbox-count"></span></p>
+      <button type="button" class="viewer-nav prev" id="lightbox-prev" aria-label="Previous photo">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6.5 9 12l5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+      </button>
+      <button type="button" class="viewer-nav next" id="lightbox-next" aria-label="Next photo">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 6.5 15 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+      </button>
+      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close photo">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg>
+      </button>
+    </div>
+
+    <div class="cursor-tag" id="cursor-tag" aria-hidden="true"><span></span></div>
+
+    <script src="/resume/resume.js?v=4"></script>
+  </body>
+</html>
